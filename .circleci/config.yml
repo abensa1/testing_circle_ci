@@ -10,8 +10,8 @@ jobs:
       - run:
           name: "run python"
           command: |
-          python --version
-          python pythonscript.py
+            python --version
+            python pythonscript.py
 
 workflows:
   say-hello-workflow:
