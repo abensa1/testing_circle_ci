@@ -2,18 +2,18 @@
 version: 2.1
 
 jobs:
-  say-hello:
+  run-python:
     docker:
-      - image: cimg/python:3.12.0
+      - image: "python:3.8"
     steps:
       - checkout
       - run:
           name: "run python"
           command: |
-          python3 --version
-          python3 ./python.py
+          python --version
+          python pythonscript.py
 
 workflows:
   say-hello-workflow:
     jobs:
-      - say-hello
+      - run-python
