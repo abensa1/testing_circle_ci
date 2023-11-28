@@ -2,4 +2,4 @@ import os
 
 print("hello")
 print(os.environ.get("CIRCLE_BRANCH"))
-print(os.environ.get("TEST_VARIABLE"))
+print(f'this is a test varibale form {os.environ.get("TEST_VARIABLE")}')
